@@ -1,14 +1,14 @@
-let slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contact-form");
 
-document.querySelector('.next').addEventListener('click', () => {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add('active');
+  if(form){
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! We’ll get back to you soon.");
+      form.reset();
+    });
+  }
 });
-
-document.querySelector('.prev').addEventListener('click', () => {
-  slides[currentSlide].classList.remove('active');
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  slides[currentSlide].classList.add('active');
-});
+function changeImage(newSrc){
+document.getElementById("mainmage").src = newSrc;
+}
