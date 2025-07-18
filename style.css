@@ -64,6 +64,8 @@
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+
+
 body {
   background: linear-gradient(to bottom, #f9f4ef 0%, #f2e8dd 100%);
   color: var(--text-color);
@@ -103,6 +105,7 @@ nav a:hover {
 .container {
   padding: 50px 20px;
 }
+
 
 h2 {
   text-align: center;
@@ -238,6 +241,12 @@ h2 {
   display: block;
 }
 
+.product-image {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .product-content {
   padding: 20px;
 }
